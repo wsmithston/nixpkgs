@@ -17,6 +17,7 @@ rec {
   dashpay = callPackage ./dashpay.nix { };
 
   dcrd = callPackage ./dcrd.nix { };
+  dcrwallet = callPackage ./dcrwallet.nix { };
 
   dogecoin  = callPackage ./dogecoin.nix { withGui = true; };
   dogecoind = callPackage ./dogecoin.nix { withGui = false; };
