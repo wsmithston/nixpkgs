@@ -2,7 +2,7 @@
 
 buildGoPackage rec {
   name = "dcrwallet-${version}";
-  version = "1.0.5";
+  version = "1.0.7";
   rev = "refs/tags/v${version}";
   goPackagePath = "github.com/decred/dcrwallet";
 
@@ -14,7 +14,7 @@ buildGoPackage rec {
   src = fetchgit {
     inherit rev;
     url = "https://${goPackagePath}";
-    sha256 = "0lbp2nd22dsznxd4423mm7s6ra2mly6h4aphq7ahs28lb4c963mi";
+    sha256 = "1r3xqk9s0303jrcxmidjxypz8yar6mq6637l8crlw4wwbw1x8yg5";
   };
 
   preBuild = ''

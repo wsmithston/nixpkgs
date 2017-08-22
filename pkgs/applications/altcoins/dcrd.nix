@@ -2,7 +2,7 @@
 
 buildGoPackage rec {
   name = "dcrd-${version}";
-  version = "1.0.5";
+  version = "1.0.7";
   rev = "refs/tags/v${version}";
   goPackagePath = "github.com/decred/dcrd";
 
@@ -14,7 +14,7 @@ buildGoPackage rec {
   src = fetchgit {
     inherit rev;
     url = "https://${goPackagePath}";
-    sha256 = "1hih3g2mmx21gdv7bw3qwcvymxc2zjyyml6sk9560d46bxllim0l";
+    sha256 = "03720yf9ayilzj5w8xjyh3cxh8r0fzyhk4zsmvqkc19cp9wbrzh7";
   };
 
   preBuild = ''
